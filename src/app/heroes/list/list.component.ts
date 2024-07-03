@@ -3,15 +3,14 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-heroes-list',
   templateUrl: './list.component.html',
-  styleUrl: './list.component.css'
+  styleUrls: ['./list.component.css']
 })
 export class ListComponent {
 
-  public heroNames: string[] = ['Spiderman', 'Ironman', 'Hulk', 'Thor'];
+  public heroNames: string[] = ['Spiderman','Ironman','Hulk','She Hulk', 'Thor'];
   public deletedHero?: string;
 
-  //Metod para borrar heroes
-  removeLastHero():void{
+  removeLastHero():void {
     this.deletedHero = this.heroNames.pop();
   }
 
